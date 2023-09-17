@@ -40,13 +40,13 @@ body {
   overflow: hidden;
   border-radius: 0.5em;
   transition: transform 500ms;
-  background-color: white;
+  background-color: rgb(64, 52, 52);
 }
 
 .image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .slider__info {
@@ -113,7 +113,7 @@ label p:hover {
 }
 
 .slider__text {
-  width: 25em;
+  width: 30em;
   min-height: 2em;
   overflow-x: hidden;
 
@@ -121,32 +121,50 @@ label p:hover {
 
 .text {
   display: flex;
-  gap: 20em;
   flex-wrap: nowrap;
-  transition: transform 200ms;
+  
 
 }
 
 .text p {
   width: 100%;
   white-space: nowrap;
+  min-width: 30em;
+  transition: transform 200ms;
 }
 
-#slide1:checked~.slider__info #text1 .text {
+#slide1:checked~.slider__info #text1 .text p {
   transform: translateX(0%);
 }
 
-#slide2:checked~.slider__info #text1 .text {
-  transform: translateX(calc(-100% - 2.2em));
+#slide2:checked~.slider__info #text1 .text p {
+  transform: translateX(calc(-100%));
 }
 
-#slide3:checked~.slider__info #text1 .text {
-  transform: translateX(calc(-200% - 4.4em));
+#slide3:checked~.slider__info #text1 .text p {
+  transform: translateX(calc(-200%));
 }
 
-#slide4:checked~.slider__info #text1 .text {
-  transform: translateX(calc(-300% - 6.6em));
+#slide4:checked~.slider__info #text1 .text p {
+  transform: translateX(calc(-300%));
 }
+
+#slide1:checked~.slider__info .slider__navigation label[for="slide1"] p {
+  background-color: rgb(96, 81, 53);
+}
+#slide2:checked~.slider__info .slider__navigation label[for="slide2"] p {
+  background-color: rgb(96, 81, 53);
+}
+#slide3:checked~.slider__info .slider__navigation label[for="slide3"] p {
+  background-color: rgb(96, 81, 53);
+}
+#slide4:checked~.slider__info .slider__navigation label[for="slide4"] p {
+  background-color: rgb(96, 81, 53);
+}
+
+
+
+
 
 
 @media (max-width: 769px) {
@@ -169,3 +187,5 @@ label p:hover {
 
   }
 }
+
+
