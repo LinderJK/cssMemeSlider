@@ -1,1 +1,2 @@
 # cssMemeSlider
+Only CSS Slider
