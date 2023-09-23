@@ -1,2 +1,2 @@
 # cssMemeSlider
-Only CSS Slider
+Deploy: https://linderjk.github.io/cssMemeSlider/cssMemeSlider/index.html
